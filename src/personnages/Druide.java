@@ -1,16 +1,18 @@
 package personnages;
 
+import java.util.Objects;
 import java.util.Random;
 import personnages.Gaulois;
 
 public class Druide {
-	private String nom;
+	private static String nom;
 	
-	private int effetPotionMin;
+	private static int effetPotionMin;
 	
-	private int effetPotionMax;
+	private static int effetPotionMax;
 
-	private int forcePotion;
+	public static int forcePotion;
+
 	
 	public Druide(String nom, int effetPotionMin, int effetPotionMax) {
 		this.nom = nom;
@@ -27,14 +29,30 @@ public class Druide {
 		System.out.println(prendreParole() + "« " + texte + "»");
 	}
 	
-	private String prendreParole() {
+	private static String prendreParole() {
 		return "Le druide " + nom + " : ";
 	}
 
-	public void preparerPotion(){
+	public static void preparerPotion(){
 		Random random= new Random();
-		int n = random.nextInt(5);
-		System.out.println(n);
+		forcePotion = random.nextInt(effetPotionMin,effetPotionMax);
 	}
-	
+
+	public static void booster(Gaulois gaulois){
+		if(Objects.equals(Gaulois.getNom(), "Obélix")){
+			System.out.println(prendreParole() + "Non, Obélix !... Tu n’auras pas de potion magique ! ");
+		}else{
+			Gaulois.boirePotion(forcePotion);
+		}
+	}
+
+	public static void main(String[] args) {
+		Gaulois asterix ;
+		asterix=new Gaulois("Astérix",6);
+
+		Gaulois obelix;
+		obelix=new Gaulois("Obélix",10);
+
+		booster(asterix);
+	}
 }
