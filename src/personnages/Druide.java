@@ -1,6 +1,6 @@
 package personnages;
 
-import java.util.*;
+import java.util.Random;
 import personnages.Gaulois;
 
 public class Druide {
@@ -9,6 +9,8 @@ public class Druide {
 	private int effetPotionMin;
 	
 	private int effetPotionMax;
+
+	private int forcePotion;
 	
 	public Druide(String nom, int effetPotionMin, int effetPotionMax) {
 		this.nom = nom;
@@ -28,7 +30,11 @@ public class Druide {
 	private String prendreParole() {
 		return "Le druide " + nom + " : ";
 	}
-	
 
+	public void preparerPotion(){
+		Random random= new Random();
+		int n = random.nextInt(5);
+		System.out.println(n);
+	}
 	
 }
