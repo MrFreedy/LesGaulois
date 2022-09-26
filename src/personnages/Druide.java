@@ -29,6 +29,10 @@ public class Druide {
 		return "Le druide " + nom + " : ";
 	}
 	
+	public void booster(Gaulois gaulois) {
+		gaulois.boirePotion();
 
+
+	}
 	
 }
