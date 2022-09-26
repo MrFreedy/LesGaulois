@@ -1,5 +1,8 @@
 package personnages;
 
+import java.util.*;
+import personnages.Gaulois;
+
 public class Druide {
 	private String nom;
 	
@@ -24,6 +27,12 @@ public class Druide {
 	
 	private String prendreParole() {
 		return "Le druide " + nom + " : ";
+	}
+	
+	public void booster(Gaulois gaulois) {
+		gaulois.boirePotion();
+	
+		
 	}
 	
 }

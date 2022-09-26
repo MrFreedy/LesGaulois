@@ -19,6 +19,11 @@ public class Gaulois {
 		System.out.println(prendreParole() + "« " + texte + "»");
 		}
 	
+	public void boirePotion() {
+		System.out.println("TEST");
+	}
+	
+	
 	private String prendreParole() {
 		return "Le gaulois " + nom + " : ";
 		}

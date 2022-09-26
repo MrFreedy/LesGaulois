@@ -2,6 +2,7 @@ package histoire;
 
 import personnages.Gaulois;
 import personnages.Romain;
+import personnages.Druide;
 
 public class Scenario {
 	
@@ -22,6 +23,8 @@ public class Scenario {
 		asterix.frapper(minus);
 		asterix.frapper(minus);
 		
+		
+		booster(asterix);
 		System.out.println("END");
 	}
 }
