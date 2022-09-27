@@ -11,8 +11,7 @@ public class Scenario {
 	
 	public static void main(String[] args) {
 		
-		Gaulois asterix ;
-		asterix=new Gaulois("Astérix",6);
+
 
 		Gaulois obelix;
 		obelix=new Gaulois("Obélix",10);
@@ -32,6 +31,10 @@ public class Scenario {
 		}
 		Druide.booster(obelix);
 		obelix.parler("Par Bélénos, ce n'est pas juste !");
+
+		Gaulois asterix ;
+		asterix=new Gaulois("Astérix",6);
+
 		Druide.booster(asterix);
 		asterix.parler("Bonjour");
 		minus.parler("Un GAU...UN GAUGAU...");

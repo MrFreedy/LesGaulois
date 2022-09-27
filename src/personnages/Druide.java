@@ -39,20 +39,11 @@ public class Druide {
 	}
 
 	public static void booster(Gaulois gaulois){
-		if(Objects.equals(Gaulois.getNom(), "Obélix")){
+		if(Gaulois.getNom()=="Obélix"){
 			System.out.println(prendreParole() + "Non, Obélix !... Tu n’auras pas de potion magique ! ");
 		}else{
 			Gaulois.boirePotion(forcePotion);
 		}
-	}
-
-	public static void main(String[] args) {
-		Gaulois asterix ;
-		asterix=new Gaulois("Astérix",6);
-
-		Gaulois obelix;
-		obelix=new Gaulois("Obélix",10);
-
-		booster(asterix);
+		System.out.println(Gaulois.getNom());
 	}
 }
