@@ -44,6 +44,5 @@ public class Druide {
 		}else{
 			Gaulois.boirePotion(forcePotion);
 		}
-		System.out.println(Gaulois.getNom());
 	}
 }
