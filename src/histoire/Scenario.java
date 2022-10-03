@@ -3,6 +3,7 @@ package histoire;
 import personnages.Gaulois;
 import personnages.Romain;
 import personnages.Druide;
+import village.Village;
 
 import static personnages.Druide.booster;
 import static personnages.Druide.forcePotion;
@@ -10,7 +11,13 @@ import static personnages.Druide.forcePotion;
 public class Scenario {
 	
 	public static void main(String[] args) {
-		
+
+		Village village;
+
+		village=new Village("Village des fous", 12);
+
+		village.getNom();
+		village.getNbHab();
 
 
 		Gaulois obelix;
