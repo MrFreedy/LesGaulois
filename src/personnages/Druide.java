@@ -5,11 +5,11 @@ import java.util.Random;
 import personnages.Gaulois;
 
 public class Druide {
-	private static String nom;
+	private String nom;
 	
-	private static int effetPotionMin;
+	private int effetPotionMin;
 	
-	private static int effetPotionMax;
+	private int effetPotionMax;
 
 	public static int forcePotion;
 
@@ -18,31 +18,36 @@ public class Druide {
 		this.nom = nom;
 		this.effetPotionMin = effetPotionMin;
 		this.effetPotionMax = effetPotionMax;
-		parler("Bonjour, je suis le druide " + nom + " et ma potion peut aller d'une force " + effetPotionMin + " à "+ effetPotionMax + ".");
+		parler("Bonjour, je suis le druide "
+				+ nom
+				+ " et ma potion peut aller d'une force "
+				+ effetPotionMin
+				+ " à "
+				+ effetPotionMax + ".");
 	}
 	
 	public String getNom() {
-		return nom;
+		return this.nom;
 	}
 	
 	public void parler(String texte) {
 		System.out.println(prendreParole() + "« " + texte + "»");
 	}
 	
-	private static String prendreParole() {
+	private String prendreParole() {
 		return "Le druide " + nom + " : ";
 	}
 
-	public static void preparerPotion(){
+	public void preparerPotion(){
 		Random random= new Random();
 		forcePotion = random.nextInt(effetPotionMin,effetPotionMax);
 	}
 
-	public static void booster(Gaulois gaulois){
+	public void booster(Gaulois gaulois){
 		if(Gaulois.getNom()=="Obélix"){
 			System.out.println(prendreParole() + "Non, Obélix !... Tu n’auras pas de potion magique ! ");
 		}else{
-			Gaulois.boirePotion(forcePotion);
+			gaulois.boirePotion(forcePotion);
 		}
 	}
 }

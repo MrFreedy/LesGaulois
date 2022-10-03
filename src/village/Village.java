@@ -1,12 +1,12 @@
 package village;
 
 public class Village {
-	private static String nom;
-	private static int nbHab;
+	private String nom;
+	private int nbHab;
 
 	public Village(String nom, int nbHab) {
-		Village.nom =nom;
-		Village.nbHab=nbHab;
+		this.nom =nom;
+		this.nbHab=nbHab;
 		
 	}
 	public void getNom() {
@@ -23,5 +23,6 @@ public class Village {
 		village=new Village("Village des fous",12);
 		village.getNbHab();
 		village.getNom();
+
 	}
 }

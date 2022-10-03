@@ -1,17 +1,17 @@
 package personnages;
 
 public class Gaulois {
-	private static String nom;
+	private String nom;
 	private int force;
-	private static int effetPotion = 1;
+	private int effetPotion = 1;
 	
 	public Gaulois(String nom, int force) {
 		super();
-		Gaulois.nom = nom;
+		this.nom = nom;
 		this.force = force;
 	}
 
-	public static String getNom() {
+	public String getNom() {
 		return nom;
 	}
 	
@@ -19,14 +19,14 @@ public class Gaulois {
 		System.out.println(prendreParole() + "« " + texte + "»");
 		}
 	
-	public static void boirePotion(int forcePotion) {
-		effetPotion=forcePotion;
+	public void boirePotion(int forcePotion) {
+		this.effetPotion=forcePotion;
 
 		System.out.println(prendreParole()+"Merci Druide, je sens que ma force est "+effetPotion+" fois décuplée.");
 	}
 	
 	
-	private static String prendreParole() {
+	private String prendreParole() {
 		return "Le gaulois " + nom + " : ";
 		}
 	

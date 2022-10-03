@@ -34,4 +34,8 @@ public class Chef {
 		System.out.println(nom + " envoie un grand coup dans la mâchoire de " +romain.getNom());
 		romain.recevoirCoup(force / 3);
 	}
+
+	public static void main(String[] args) {
+		Chef boss= new Chef("Bracourix",10,3,"Rerfr");
+	}
 }
