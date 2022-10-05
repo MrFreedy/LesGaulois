@@ -10,14 +10,7 @@ import static personnages.Druide.forcePotion;
 
 public class Scenario {
 	
-	public static void main(String[] args) {
-
-		Village village;
-
-		village=new Village("Village des fous", 12);
-
-		village.getNom();
-		village.getNbHab();
+	/*public static void main(String[] args) {
 
 
 		Gaulois obelix;
@@ -51,5 +44,5 @@ public class Scenario {
 		asterix.frapper(minus);
 
 
-	}
+	}*/
 }

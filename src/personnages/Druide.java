@@ -43,11 +43,11 @@ public class Druide {
 		forcePotion = random.nextInt(effetPotionMin,effetPotionMax);
 	}
 
-	public void booster(Gaulois gaulois){
+	/*public void booster(Gaulois gaulois){
 		if(Gaulois.getNom()=="Obélix"){
 			System.out.println(prendreParole() + "Non, Obélix !... Tu n’auras pas de potion magique ! ");
 		}else{
 			gaulois.boirePotion(forcePotion);
 		}
-	}
+	}*/
 }
