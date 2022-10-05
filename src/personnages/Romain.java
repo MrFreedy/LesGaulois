@@ -4,7 +4,9 @@ public class Romain {
 
 	private String nom;
 	private int force;
-	
+
+	private Equipement[] equipements;
+	private int nbEquipement=0;
 	public Romain(String nom, int force) {
 		this.nom=nom;
 		this.force=force;
@@ -29,4 +31,9 @@ public class Romain {
 			parler("J'abadonne...");
 		}
 		}
+
+	public void sEquiper(Equipement equipement){
+
+	}
+
 }
