@@ -5,35 +5,29 @@ public class Romain {
 	private String nom;
 	private int force;
 
-	private Equipement[] equipements;
-	private int nbEquipement=0;
 	public Romain(String nom, int force) {
-		this.nom=nom;
-		this.force=force;
+		this.nom = nom;
+		this.force = force;
 	}
-	
+
 	public String getNom() {
 		return nom;
 	}
-	
-	public void parler(String texte) {
-		System.out.println(prendreParole() + "« " + texte + "»");
+
+	public void parler(String texte){
+		System.out.println(prendreParole() + " << " + texte+" >>");
 	}
-	private String prendreParole() {
-		return "Le romain "+nom+":";
+
+	public String prendreParole(){
+		return "Le romain " + nom+" :";
 	}
-	
-	public void recevoirCoup(int forceCoup) {
-		force -= forceCoup;
-		if (force>0) {
-			parler ("Aie");
+
+	public void recevoirCoup(int forceCoup){
+		force-=forceCoup;
+		if(force>0){
+			parler("Aie");
 		}else {
-			parler("J'abadonne...");
+			parler("J'abandonne...'");
 		}
-		}
-
-	public void sEquiper(Equipement equipement){
-
 	}
-
 }
