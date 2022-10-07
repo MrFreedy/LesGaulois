@@ -36,9 +36,4 @@ public class Gaulois {
 		return "Gaulois [nom=" + nom + ", force=" + force +", effetPotion= "+effetPotion +"]";
 	}
 
-	public static void main(String[] args) {
-		Gaulois gaulois = new Gaulois("Asterix", 8);
-		gaulois.boirePotion(2);
-	}
-
 }

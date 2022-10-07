@@ -11,7 +11,7 @@ public class Druide {
 	
 	private int effetPotionMax;
 
-	private int forcePotion=1;
+	public int forcePotion=1;
 
 	public Druide(String nom, int effetPotionMin, int effetPotionMax) {
 		this.nom = nom;
@@ -38,15 +38,11 @@ public class Druide {
 		forcePotion = random.nextInt(effetPotionMax);
 	}
 
-	public static void main(String[] args) {
-		Druide panoramix = new Druide("Panoramix", 5, 10);
-		panoramix.preparePotion();
-		if (panoramix.forcePotion > 7) {
-			System.out.println("J'ai préparé une super potion de force "
-					+ panoramix.forcePotion);
-		} else {
-			System.out.println("Je n'ai pas trouvé tous les ingrédients, ma potion est seulement de force "
-					+ panoramix.forcePotion);
-		}
+	public void booster(Gaulois gaulois){
+		if(gaulois.getNom().equals("Obélix")){
+			parler("Non, Obélix!... Tu n'auras pas de potion magique!");
+		}else{
+		gaulois.boirePotion(forcePotion);
+	}
 	}
 }
