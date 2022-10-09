@@ -8,9 +8,14 @@
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histoire/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/histoire/Scenario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LesGaulois/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LesGaulois/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LesGaulois/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LesGaulois/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personnages/Chef.java" beforeDir="false" afterPath="$PROJECT_DIR$/personnages/Chef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personnages/Druide.java" beforeDir="false" afterPath="$PROJECT_DIR$/personnages/Druide.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/personnages/Gaulois.java" beforeDir="false" afterPath="$PROJECT_DIR$/personnages/Gaulois.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personnages/Romain.java" beforeDir="false" afterPath="$PROJECT_DIR$/personnages/Romain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/village/Village.java" beforeDir="false" afterPath="$PROJECT_DIR$/village/Village.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +77,7 @@
       <workItem from="1664969882565" duration="6433000" />
       <workItem from="1665067076553" duration="79000" />
       <workItem from="1665067260474" duration="164000" />
-      <workItem from="1665067739093" duration="498000" />
+      <workItem from="1665067739093" duration="2904000" />
     </task>
     <task id="LOCAL-00001" summary="Création du Village">
       <created>1664973321923</created>
