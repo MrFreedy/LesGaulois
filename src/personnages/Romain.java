@@ -7,7 +7,7 @@ public class Romain {
 	private String nom;
 	private int force;
 
-	private Equipement[] equipements;
+	private Equipement[] equipements=new Equipement[2];
 
 	private int nbEquipements=0;
 
@@ -38,30 +38,38 @@ public class Romain {
 	}
 
 	public void sEquiper(Equipement equipement){
-		equipements[nbEquipements] = equipement;
-		nbEquipements++;
-
-	}
-
-	public static void main(String[] args) {
-		Romain romain = new Romain("Julius", 100);
-		romain.parler("Je suis un romain");
-		/*switch (romain.nbEquipements){
+		String romainName=nom;
+		switch (nbEquipements){
 			case 0:
-				romain.sEquiper(Equipement.CASQUE);
-				romain.sEquiper(Equipement.BOUCLIER);
+				equipements[nbEquipements]=equipement;
+				nbEquipements++;
+				if(equipement==Equipement.CASQUE) {
+					equipements[nbEquipements] = Equipement.BOUCLIER;
+					nbEquipements++;
+				}else {
+					equipements[nbEquipements] = Equipement.CASQUE;
+					nbEquipements++;
+				}
+				System.out.println("Le soldat "+romainName +" s'équipe d'un casque et d'un bouclier");
 				break;
 			case 1:
-				if(romain.equipements[0] == Equipement.CASQUE){
-					romain.sEquiper(Equipement.BOUCLIER);
+				if(equipements[0].equals(Equipement.CASQUE)){
+					equipements[nbEquipements]=equipement;
+					nbEquipements++;
+					System.out.println("Le soldat "+romainName+" s'équipe d'un "+Equipement.BOUCLIER.toString());
+
 					break;
 				}else{
-					romain.sEquiper(Equipement.CASQUE);
+					equipements[nbEquipements]=equipement;
+					nbEquipements++;
+					System.out.println("Le soldat "+romainName+" s'équipe d'un"+Equipement.CASQUE.toString());
 					break;
 				}
-			case 2:
-				System.out.println("Le soldat "+romain+" est déjà bien protégé");
+			default:
+				System.out.println(nbEquipements);
+				System.out.println("Le soldat "+ romainName+" est déjà bien protégé");
 				break;
-		}*/
+
+		}
 	}
 }

@@ -1,15 +1,15 @@
 package personnages;
 
 public enum Equipement {
-    CASQUE,BOUCLIER;
+    CASQUE("casque"),BOUCLIER("bouclier");
 
     private String nom;
 
-    public static void initNom(String nom){
-        CASQUE.nom = nom;
+    private Equipement(String nom) {
+        this.nom = nom;
     }
 
-    public static void main(String[] args) {
-
+    public String toString() {
+        return nom;
     }
 }
