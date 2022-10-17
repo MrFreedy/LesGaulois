@@ -1,5 +1,6 @@
 package histoire;
 
+import personnages.Equipement;
 import personnages.Gaulois;
 import personnages.Romain;
 import personnages.Druide;
@@ -8,7 +9,7 @@ public class Scenario {
 	
 	public static void main(String[] args) {
         Gaulois asterix = new Gaulois("Asterix", 8);
-        Gaulois obelix = new Gaulois("Obelix", 10);
+        Gaulois obelix = new Gaulois("Obélix", 10);
         Romain minus= new Romain("Minus", 6);
         Druide panoramix = new Druide("Panoramix", 5, 10);
 
@@ -22,9 +23,10 @@ public class Scenario {
         panoramix.booster(obelix);
         obelix.parler("Par Bélénos, ce n'est pas juste !");
         panoramix.booster(asterix);
-        asterix.parler("Merci Druide, je sens que ma force est 6 fois décuplée !");
         asterix.parler("Bonjour");
         minus.parler("UN GAU...UN GAUGAU...");
+        minus.sEquiper(Equipement.CASQUE);
+        minus.sEquiper(Equipement.BOUCLIER);
         asterix.frapper(minus);
     }
 }

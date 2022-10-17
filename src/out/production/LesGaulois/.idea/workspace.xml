@@ -4,23 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14aa0365-c224-480c-a667-e7df1a871523" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+    <list default="true" id="14aa0365-c224-480c-a667-e7df1a871523" name="Changes" comment="TP3 Finish">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/histoire/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/histoire/Scenario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LesGaulois/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LesGaulois/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LesGaulois/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LesGaulois/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personnages/Chef.java" beforeDir="false" afterPath="$PROJECT_DIR$/personnages/Chef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personnages/Druide.java" beforeDir="false" afterPath="$PROJECT_DIR$/personnages/Druide.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/personnages/Gaulois.java" beforeDir="false" afterPath="$PROJECT_DIR$/personnages/Gaulois.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/personnages/Romain.java" beforeDir="false" afterPath="$PROJECT_DIR$/personnages/Romain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/village/Village.java" beforeDir="false" afterPath="$PROJECT_DIR$/village/Village.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,6 +48,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Project.color&quot;: &quot;004958&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -78,6 +76,11 @@
       <workItem from="1665067076553" duration="79000" />
       <workItem from="1665067260474" duration="164000" />
       <workItem from="1665067739093" duration="2904000" />
+      <workItem from="1665148714039" duration="7541000" />
+      <workItem from="1665335409689" duration="20000" />
+      <workItem from="1665336294034" duration="4149000" />
+      <workItem from="1666028967455" duration="293000" />
+      <workItem from="1666029278327" duration="3512000" />
     </task>
     <task id="LOCAL-00001" summary="Création du Village">
       <created>1664973321923</created>
@@ -93,15 +96,51 @@
       <option name="project" value="LOCAL" />
       <updated>1664976353639</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Création enum Equipement">
+      <created>1665157930800</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665157930800</updated>
+    </task>
+    <task id="LOCAL-00004" summary="TP3 Finish">
+      <created>1665340341575</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665340341575</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Création du Village" />
     <MESSAGE value="Création enum Equipement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Création enum Equipement" />
+    <MESSAGE value="TP3 Finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="TP3 Finish" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
